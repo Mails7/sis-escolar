@@ -1,0 +1,61 @@
+{
+  "node": {
+    "403ffbebb7ff969dfb65bb27bdb44530be8a8162f7": {
+      "workers": {
+        "app/teachers/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CSISTEMA%20DE%20GEST%C3%83O%20ESCOLAR%20SEMEC%5C%5Capp%5C%5Cactions%5C%5Cteacher-actions.ts%22%2C%5B%7B%22id%22%3A%22403ffbebb7ff969dfb65bb27bdb44530be8a8162f7%22%2C%22exportedName%22%3A%22createTeacher%22%7D%2C%7B%22id%22%3A%22404c7db14e53e501675ac6e1e0a545f331268d72ec%22%2C%22exportedName%22%3A%22getTeacherById%22%7D%2C%7B%22id%22%3A%22407d45a26f6ebca756bb990ed9fd91f7beffc8ecd9%22%2C%22exportedName%22%3A%22deleteTeacher%22%7D%2C%7B%22id%22%3A%22608014af6fddb6e051a4917fde1c0e5c401bd4ad41%22%2C%22exportedName%22%3A%22updateTeacher%22%7D%2C%7B%22id%22%3A%227c20b80871b77e2b6f65f72d39787379e561db36b3%22%2C%22exportedName%22%3A%22getTeachers%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/teachers/page": "action-browser"
+      }
+    },
+    "404c7db14e53e501675ac6e1e0a545f331268d72ec": {
+      "workers": {
+        "app/teachers/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CSISTEMA%20DE%20GEST%C3%83O%20ESCOLAR%20SEMEC%5C%5Capp%5C%5Cactions%5C%5Cteacher-actions.ts%22%2C%5B%7B%22id%22%3A%22403ffbebb7ff969dfb65bb27bdb44530be8a8162f7%22%2C%22exportedName%22%3A%22createTeacher%22%7D%2C%7B%22id%22%3A%22404c7db14e53e501675ac6e1e0a545f331268d72ec%22%2C%22exportedName%22%3A%22getTeacherById%22%7D%2C%7B%22id%22%3A%22407d45a26f6ebca756bb990ed9fd91f7beffc8ecd9%22%2C%22exportedName%22%3A%22deleteTeacher%22%7D%2C%7B%22id%22%3A%22608014af6fddb6e051a4917fde1c0e5c401bd4ad41%22%2C%22exportedName%22%3A%22updateTeacher%22%7D%2C%7B%22id%22%3A%227c20b80871b77e2b6f65f72d39787379e561db36b3%22%2C%22exportedName%22%3A%22getTeachers%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/teachers/page": "action-browser"
+      }
+    },
+    "407d45a26f6ebca756bb990ed9fd91f7beffc8ecd9": {
+      "workers": {
+        "app/teachers/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CSISTEMA%20DE%20GEST%C3%83O%20ESCOLAR%20SEMEC%5C%5Capp%5C%5Cactions%5C%5Cteacher-actions.ts%22%2C%5B%7B%22id%22%3A%22403ffbebb7ff969dfb65bb27bdb44530be8a8162f7%22%2C%22exportedName%22%3A%22createTeacher%22%7D%2C%7B%22id%22%3A%22404c7db14e53e501675ac6e1e0a545f331268d72ec%22%2C%22exportedName%22%3A%22getTeacherById%22%7D%2C%7B%22id%22%3A%22407d45a26f6ebca756bb990ed9fd91f7beffc8ecd9%22%2C%22exportedName%22%3A%22deleteTeacher%22%7D%2C%7B%22id%22%3A%22608014af6fddb6e051a4917fde1c0e5c401bd4ad41%22%2C%22exportedName%22%3A%22updateTeacher%22%7D%2C%7B%22id%22%3A%227c20b80871b77e2b6f65f72d39787379e561db36b3%22%2C%22exportedName%22%3A%22getTeachers%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/teachers/page": "action-browser"
+      }
+    },
+    "608014af6fddb6e051a4917fde1c0e5c401bd4ad41": {
+      "workers": {
+        "app/teachers/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CSISTEMA%20DE%20GEST%C3%83O%20ESCOLAR%20SEMEC%5C%5Capp%5C%5Cactions%5C%5Cteacher-actions.ts%22%2C%5B%7B%22id%22%3A%22403ffbebb7ff969dfb65bb27bdb44530be8a8162f7%22%2C%22exportedName%22%3A%22createTeacher%22%7D%2C%7B%22id%22%3A%22404c7db14e53e501675ac6e1e0a545f331268d72ec%22%2C%22exportedName%22%3A%22getTeacherById%22%7D%2C%7B%22id%22%3A%22407d45a26f6ebca756bb990ed9fd91f7beffc8ecd9%22%2C%22exportedName%22%3A%22deleteTeacher%22%7D%2C%7B%22id%22%3A%22608014af6fddb6e051a4917fde1c0e5c401bd4ad41%22%2C%22exportedName%22%3A%22updateTeacher%22%7D%2C%7B%22id%22%3A%227c20b80871b77e2b6f65f72d39787379e561db36b3%22%2C%22exportedName%22%3A%22getTeachers%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/teachers/page": "action-browser"
+      }
+    },
+    "7c20b80871b77e2b6f65f72d39787379e561db36b3": {
+      "workers": {
+        "app/teachers/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CSISTEMA%20DE%20GEST%C3%83O%20ESCOLAR%20SEMEC%5C%5Capp%5C%5Cactions%5C%5Cteacher-actions.ts%22%2C%5B%7B%22id%22%3A%22403ffbebb7ff969dfb65bb27bdb44530be8a8162f7%22%2C%22exportedName%22%3A%22createTeacher%22%7D%2C%7B%22id%22%3A%22404c7db14e53e501675ac6e1e0a545f331268d72ec%22%2C%22exportedName%22%3A%22getTeacherById%22%7D%2C%7B%22id%22%3A%22407d45a26f6ebca756bb990ed9fd91f7beffc8ecd9%22%2C%22exportedName%22%3A%22deleteTeacher%22%7D%2C%7B%22id%22%3A%22608014af6fddb6e051a4917fde1c0e5c401bd4ad41%22%2C%22exportedName%22%3A%22updateTeacher%22%7D%2C%7B%22id%22%3A%227c20b80871b77e2b6f65f72d39787379e561db36b3%22%2C%22exportedName%22%3A%22getTeachers%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/teachers/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "bARpZN+F1rCrmzUIun3QbAqNRXit+UiPUNXlm5Lpzic="
+}
