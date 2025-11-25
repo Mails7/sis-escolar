@@ -70,12 +70,6 @@ export default function Dashboard() {
           </CardContent>
         </Card>
       </div>
-
-      <div className="mt-6 flex justify-center">
-        <Button variant="outline" asChild>
-          <Link href="/admin/setup-database">Configurar Banco de Dados</Link>
-        </Button>
-      </div>
     </div>
   )
 }

@@ -3,17 +3,8 @@ import { PlusCircle } from "lucide-react"
 import Link from "next/link"
 import { Suspense } from "react"
 import { TeacherTable } from "@/components/teachers/teacher-table"
-import { TableNotFoundAlert } from "@/components/teachers/table-not-found-alert"
-import { tableExists } from "@/lib/postgres"
-
-async function checkTeachersTable() {
-  const exists = await tableExists("teachers")
-  return { exists }
-}
 
 export default async function TeachersPage() {
-  const { exists } = await checkTeachersTable()
-
   return (
     <div className="container mx-auto py-10">
       <div className="flex justify-between items-center mb-6">
@@ -25,8 +16,6 @@ export default async function TeachersPage() {
           </Link>
         </Button>
       </div>
-
-      {!exists && <TableNotFoundAlert />}
 
       <Suspense fallback={<div>Carregando...</div>}>
         <TeacherTable />

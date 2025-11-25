@@ -4,9 +4,8 @@ import { EnrollmentList } from "@/components/enrollments/enrollment-list"
 import { Skeleton } from "@/components/ui/skeleton"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { PlusCircle, AlertCircle, Database } from "lucide-react"
+import { PlusCircle, AlertCircle } from "lucide-react"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
   title: "Matrículas | Sistema Escolar",
@@ -120,40 +119,6 @@ function EnrollmentListSkeleton() {
   )
 }
 
-function TableNotFoundAlert() {
-  return (
-    <Card className="mb-6">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Database className="h-5 w-5" />
-          Tabela de Matrículas não encontrada
-        </CardTitle>
-        <CardDescription>
-          A tabela de matrículas não foi encontrada no banco de dados. É necessário inicializá-la antes de continuar.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <Alert variant="warning" className="mb-4">
-          <AlertCircle className="h-4 w-4" />
-          <AlertTitle>Ação necessária</AlertTitle>
-          <AlertDescription>
-            Para utilizar o sistema de matrículas, é necessário criar a tabela no banco de dados.
-          </AlertDescription>
-        </Alert>
-      </CardContent>
-      <CardFooter className="flex flex-col items-start gap-4">
-        <Link href="/admin/setup-database">
-          <Button>Configurar Banco de Dados</Button>
-        </Link>
-        <p className="text-sm text-gray-500">
-          Clique no botão acima para ir para a página de configuração do banco de dados, onde você poderá criar todas as
-          tabelas necessárias para o sistema.
-        </p>
-      </CardFooter>
-    </Card>
-  )
-}
-
 export default async function EnrollmentsPage() {
   const { data: enrollments, error } = await getEnrollments()
 
@@ -169,9 +134,7 @@ export default async function EnrollmentsPage() {
         </Link>
       </div>
 
-      {error === "table_not_found" ? (
-        <TableNotFoundAlert />
-      ) : error ? (
+      {error && error !== "table_not_found" && (
         <Alert variant="destructive" className="mb-6">
           <AlertCircle className="h-4 w-4" />
           <AlertTitle>Erro</AlertTitle>
@@ -181,18 +144,6 @@ export default async function EnrollmentsPage() {
               : `Ocorreu um erro ao buscar as matrículas: ${error}`}
           </AlertDescription>
         </Alert>
-      ) : null}
-
-      {error && (
-        <div className="mb-6">
-          <Alert>
-            <AlertCircle className="h-4 w-4" />
-            <AlertTitle>Modo de demonstração</AlertTitle>
-            <AlertDescription>
-              Exibindo dados de exemplo. Para ver dados reais, inicialize o banco de dados.
-            </AlertDescription>
-          </Alert>
-        </div>
       )}
 
       <Suspense fallback={<EnrollmentListSkeleton />}>
