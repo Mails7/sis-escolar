@@ -140,7 +140,7 @@ export default function Sidebar({ defaultCollapsed = false }: SidebarProps) {
         <div className="flex h-14 items-center justify-between border-b px-4">
           <Link href="/" className={cn("flex items-center gap-2", collapsed && "justify-center")}>
             <School className="h-6 w-6" />
-            {!collapsed && <span className="font-bold">CEMEC</span>}
+            {!collapsed && <span className="font-bold">SEMEC</span>}
           </Link>
           <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setCollapsed(!collapsed)}>
             {collapsed ? <ChevronDown className="h-4 w-4 rotate-180" /> : <ChevronDown className="h-4 w-4" />}
